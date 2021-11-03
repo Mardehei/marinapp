@@ -58,9 +58,8 @@ function TodoList() {
                 <LocalizationProvider dateAdapter={AdapterDateFns}>
                     <DesktopDatePicker
                         label="Date"
-                        value={value}
-                        onChange={(newValue) => {
-                        setValue(newValue);
+                        onChange={(date) => {
+                        setDate(date);
                         }}
                         renderInput={(params) => <TextField {...params}
                         onChange={e => setDate(e.target.value)} />}
