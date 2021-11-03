@@ -46,8 +46,6 @@ function TodoList() {
         }
     ];
 
-    const [value, setValue] = React.useState(null);
-
     return(
         <div>
             <Stack 
@@ -62,7 +60,7 @@ function TodoList() {
                         setDate(date);
                         }}
                         renderInput={(params) => <TextField {...params}
-                        onChange={e => setDate(e.target.value)} />}
+                        />}
                     />
                 </LocalizationProvider> 
                 <TextField  
