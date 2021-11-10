@@ -36,6 +36,10 @@ function TodoList() {
         else
             alert("valitse ensin poistettava rivi");
     }
+
+    const deleteAll = (row) => {
+        
+    }
     
 
     const columns = [
@@ -87,6 +91,15 @@ function TodoList() {
                         variant="outlined" 
                         color="error" 
                         onClick={deleteTodo}>Delete
+                    </Button>
+                </Tooltip>
+                <Tooltip title= "Poista kaikki rivit">
+                    <Button 
+                        endIcon={<DeleteIcon />} 
+                        size="big" 
+                        variant="outlined" 
+                        color="error" 
+                        onClick={deleteTodo}>Delete all
                     </Button>
                 </Tooltip>
             </Stack>
